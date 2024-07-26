@@ -1,7 +1,6 @@
 import React from "react";
 
-import camera from "./assets/camera.png";
-import { Link } from "react-router-dom";
+import { Image } from "antd";
 
 const image = [
     "https://wiso-html.foxthemes.me/images/justin-groep-662280-unsplash.jpg",
@@ -10,7 +9,7 @@ const image = [
     "https://wiso-html.foxthemes.me/images/annie-spratt-133932-unsplash.jpg",
 ];
 
-import { cop, wed, bday, stu, out, somzi } from "./images";
+import { cop, wed, bday, stu, out, somzi, pregr } from "./images";
 
 const Home = () => {
     return (
@@ -27,79 +26,138 @@ const Home = () => {
 
             <Container title="CORPORATE PHOTOGRAPHY">
                 <div class=" container grid grid-cols-4 grid-rows-2 gap-2 md:gap-4 p-4">
-                    <img
-                        class="col-span-2 row-span-1 h-full w-full object-cover bg-blue-400 "
-                        src={cop[1]}
-                    />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={cop[5]} />
-
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={cop[2]} />
-
-                    <img class=" h-full w-full object-cover bg-blue-400 r" src={cop[3]} />
-
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={cop[0]} />
-                    <img class="col-span-2  h-full w-full object-cover bg-blue-400 " src={cop[4]} />
+                    <div class="col-span-2 row-span-1 h-full w-full object-cover bg-blue-400 ">
+                        <Image
+                            class="col-span-2 row-span-1 h-full w-full object-cover bg-blue-400 "
+                            src={cop[1]}
+                            height={"100%"}
+                        />
+                    </div>
+                    <div class=" h-full w-full object-cover bg-blue-400 ">
+                        <Image class=" h-full w-full object-cover bg-blue-400 " src={cop[5]} />
+                    </div>
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={cop[2]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 r" src={cop[3]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={cop[0]} />
+                    <div class="col-span-2  h-full w-full object-cover bg-blue-400 ">
+                        <Image
+                            class="col-span-2  h-full w-full object-cover bg-blue-400 "
+                            src={cop[4]}
+                            height={"100%"}
+                        />
+                    </div>
                 </div>
             </Container>
 
             <Container title="STUDIO    PHOTOSHOOT">
                 <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
-                    <img class="  w-full object-cover bg-blue-400 " src={stu[0]} />
+                    <Image class="  w-full object-cover bg-blue-400 " src={stu[0]} />
 
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={stu[1]} />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={stu[2]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={stu[1]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={stu[2]} />
                 </div>
             </Container>
+
             <Container title="WEDDING PHOTOSHOOT">
                 <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 p-4">
-                    <img
-                        class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 "
-                        src={wed[3]}
-                    />
+                    <div class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 ">
+                        <Image
+                            class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 "
+                            src={wed[3]}
+                        />
+                    </div>
 
-                    <img
-                        class=" row-span-2  h-full w-full object-cover bg-blue-400 "
-                        src={wed[0]}
-                    />
+                    <div class=" row-span-2  h-full w-full object-cover bg-blue-400 ">
+                        <Image
+                            class=" row-span-2  h-full w-full object-cover bg-blue-400 "
+                            src={wed[0]}
+                            height={"100%"}
+                        />
+                    </div>
 
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={wed[2]} />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={wed[4]} />
-                    <img class="  h-full w-full object-cover bg-blue-400 " src={wed[1]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={wed[2]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={wed[4]} />
+                    <Image class="  h-full w-full object-cover bg-blue-400 " src={wed[1]} />
                 </div>
             </Container>
 
             <Container title="OUTDOOR PHOTOSHOOT">
                 <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
-                    <img class="  w-full object-cover bg-blue-400 " src={out[0]} />
+                    <Image class="  w-full object-cover bg-blue-400 " src={out[0]} />
 
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={out[1]} />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={out[2]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={out[1]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={out[2]} />
                 </div>
             </Container>
 
             <Container title="BIRTHDAY PHOTOSHOOT">
                 <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 p-4">
-                    <img class=" h-full w-full object-cover bg-blue-400  " src={bday[0]} />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={bday[1]} />
-                    <img class="  h-full w-full object-cover bg-blue-400 " src={bday[3]} />
-                    <img
-                        class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 "
-                        src={bday[4]}
-                    />
+                    <Image class=" h-full w-full object-cover bg-blue-400  " src={bday[0]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={bday[1]} />
+                    <Image class="  h-full w-full object-cover bg-blue-400 " src={bday[3]} />
+                    <div class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 ">
+                        <Image
+                            class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 "
+                            src={bday[4]}
+                            height={"100%"}
+                        />
+                    </div>
 
-                    <img
-                        class=" row-span-2  h-full w-full object-cover bg-blue-400 "
+                    <Image
+                        class="   h-full w-full object-cover bg-blue-400 "
                         src={bday[2]}
+                        height={"100%"}
                     />
                 </div>
             </Container>
 
             <Container title="SOMZI'S PERSONAL PHOTOGRAPHER">
                 <div class=" container grid grid-cols-3  gap-2 md:gap-4 p-4">
-                    <img class="  w-full object-cover bg-blue-400 " src={somzi[0]} />
+                    <Image class="  w-full object-cover bg-blue-400 " src={somzi[0]} />
 
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={somzi[1]} />
-                    <img class=" h-full w-full object-cover bg-blue-400 " src={somzi[2]} />
+                    <Image class=" h-full w-full object-cover bg-blue-400 " src={somzi[1]} />
+                    <Image
+                        class=" h-full w-full object-cover bg-blue-400 "
+                        src={somzi[2]}
+                        height={"100%"}
+                    />
+                </div>
+            </Container>
+
+            <Container title="PREGNANCY    PHOTOSHOOT">
+                <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
+                    <Image
+                        class="  w-full object-cover bg-blue-400 "
+                        src={pregr[0]}
+                        height={"100%"}
+                    />
+
+                    <Image
+                        class=" h-full w-full object-cover bg-blue-400 "
+                        src={pregr[1]}
+                        height={"100%"}
+                    />
+                    <Image
+                        class=" h-full w-full object-cover bg-blue-400 "
+                        src={pregr[2]}
+                        height={"100%"}
+                    />
+                    <Image
+                        class="  w-full object-cover bg-blue-400 "
+                        src={pregr[3]}
+                        height={"100%"}
+                    />
+
+                    <Image
+                        class=" h-full w-full object-cover bg-blue-400 "
+                        src={pregr[4]}
+                        height={"100%"}
+                    />
+                    <Image
+                        class=" h-full w-full object-cover bg-blue-400 "
+                        src={pregr[5]}
+                        height={"100%"}
+                    />
                 </div>
             </Container>
 

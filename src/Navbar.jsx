@@ -64,7 +64,7 @@ const Navbar = () => {
 
             <div className=" bg-gradient-to-r from-green-400 to-blue-500 h-[1.5px]"></div>
             {showMenu && (
-                <div className="  z-50 ease-in-out delay-1000 bg-[#194D47] text-white p-8 absolute inset-0 h-full flex justify-center items-center">
+                <div className="  z-50 ease-in-out delay-1000 bg-[#194D47] text-white p-8 absolute inset-0 min-h-full flex justify-center items-center">
                     <button
                         className=" absolute top-0 right-0 p-6 cursor-pointer"
                         onClick={() => setShowMenu(false)}
@@ -82,7 +82,7 @@ const Navbar = () => {
                             </Link>
                         </li>
 
-                        <li className=" cursor-pointer py-2">
+                        <li className=" cursor-pointer py-2 ">
                             <Link
                                 to="/about-us"
                                 onClick={() => setShowMenu(false)}

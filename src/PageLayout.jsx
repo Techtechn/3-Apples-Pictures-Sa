@@ -8,7 +8,7 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
 
-import logo from "./assets/logo2.png";
+import logo from "./assets/logo.jpeg";
 
 const PageLayout = () => {
     return (
@@ -43,7 +43,7 @@ const PageLayout = () => {
             </footer> */}
 
             <footer className=" bg-[#F5F5FA]  pt-5  bg-contain  md:h-[400px]  bg-[url('https://themes.hody.co/bezel/wp-content/themes/bezel-wp/assets/images/dotted-map.png')]">
-                <div className=" w-full px-8 md:px-[12%] py-8 text-[#787878] grid md:grid-cols-3 gap-8">
+                <div className="  px-8 md:px-[12%] py-8 text-[#787878] grid md:grid-cols-3 gap-8">
                     <div>
                         <img src={logo} alt="" className=" h-[50px] cursor-pointer" />
                         <h3 className=" text-[20px] font-semibold my-5 text-[#222]">

@@ -1,14 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 
-import background from "./assets/hero.jpg";
-import pattern from "./assets/pattern.png";
-import studio from "./assets/studio.jpg";
-
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { IoMail } from "react-icons/io5";
-import { TiLocation } from "react-icons/ti";
-
 function App() {
     const [value, setValue] = useState();
 

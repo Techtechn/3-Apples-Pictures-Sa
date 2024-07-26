@@ -29,6 +29,14 @@ import som1 from "./assets/somzi/som1.jpeg";
 import som2 from "./assets/somzi/som2.jpeg";
 import som3 from "./assets/somzi/som3.jpeg";
 
+import preg from "./assets/prg/preg.jpg";
+import preg1 from "./assets/prg/preg1.jpg";
+import preg2 from "./assets/prg/preg2.jpg";
+import preg3 from "./assets/prg/preg3.jpg";
+import preg4 from "./assets/prg/preg4.jpg";
+import preg5 from "./assets/prg/preg5.jpg";
+//import preg6 from "./assets/prg/preg6.jpg";
+
 export const cop = [cop1, cop2, cop3, cop4, cop5, cop6];
 
 export const wed = [wed1, wed2, wed3, wed4, wed5];
@@ -40,3 +48,5 @@ export const stu = [stu1, stu2, stu3];
 export const out = [out1, out2, out3];
 
 export const somzi = [som1, som2, som3];
+
+export const pregr = [preg, preg1, preg2, preg3, preg4, preg5];
