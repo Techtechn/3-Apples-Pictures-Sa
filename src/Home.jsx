@@ -25,7 +25,7 @@ const Home = () => {
             </header> */}
 
             <Container title="CORPORATE PHOTOGRAPHY">
-                <div class=" container grid grid-cols-4 grid-rows-2 gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-4 grid-rows-2 gap-2 md:gap-4 ">
                     <div class="col-span-2 row-span-1 h-full w-full object-cover bg-blue-400 ">
                         <Image
                             class="col-span-2 row-span-1 h-full w-full object-cover bg-blue-400 "
@@ -50,7 +50,7 @@ const Home = () => {
             </Container>
 
             <Container title="STUDIO    PHOTOSHOOT">
-                <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3   gap-2 md:gap-4 ">
                     <Image class="  w-full object-cover bg-blue-400 " src={stu[0]} />
 
                     <Image class=" h-full w-full object-cover bg-blue-400 " src={stu[1]} />
@@ -59,7 +59,7 @@ const Home = () => {
             </Container>
 
             <Container title="WEDDING PHOTOSHOOT">
-                <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 ">
                     <div class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 ">
                         <Image
                             class=" row-span-2 col-span-2 h-full w-full object-cover bg-blue-400 "
@@ -82,7 +82,7 @@ const Home = () => {
             </Container>
 
             <Container title="OUTDOOR PHOTOSHOOT">
-                <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3   gap-2 md:gap-4 ">
                     <Image class="  w-full object-cover bg-blue-400 " src={out[0]} />
 
                     <Image class=" h-full w-full object-cover bg-blue-400 " src={out[1]} />
@@ -91,7 +91,7 @@ const Home = () => {
             </Container>
 
             <Container title="BIRTHDAY PHOTOSHOOT">
-                <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3 grid-rows-2 gap-2 md:gap-4 ">
                     <Image class=" h-full w-full object-cover bg-blue-400  " src={bday[0]} />
                     <Image class=" h-full w-full object-cover bg-blue-400 " src={bday[1]} />
                     <Image class="  h-full w-full object-cover bg-blue-400 " src={bday[3]} />
@@ -112,7 +112,7 @@ const Home = () => {
             </Container>
 
             <Container title="SOMZI'S PERSONAL PHOTOGRAPHER">
-                <div class=" container grid grid-cols-3  gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3  gap-2 md:gap-4 ">
                     <Image class="  w-full object-cover bg-blue-400 " src={somzi[0]} />
 
                     <Image class=" h-full w-full object-cover bg-blue-400 " src={somzi[1]} />
@@ -125,7 +125,7 @@ const Home = () => {
             </Container>
 
             <Container title="PREGNANCY    PHOTOSHOOT">
-                <div class=" container grid grid-cols-3   gap-2 md:gap-4 p-4">
+                <div class=" container grid grid-cols-3   gap-2 md:gap-4 ">
                     <Image
                         class="  w-full object-cover bg-blue-400 "
                         src={pregr[0]}

@@ -11,7 +11,7 @@ function App() {
     };
 
     return (
-        <div className="    w-full  text-[#999999]">
+        <div className="    w-full  text-[#999999] overflow-hidden">
             <section className=" w-full ">
                 <iframe
                     className=" w-full"
@@ -79,14 +79,14 @@ function InputText({ placeholder, text }) {
             {!text ? (
                 <input
                     type="text"
-                    className="  block border rounded-sm w-full  p-3 text-sm"
+                    className="  block border rounded-sm w-full  py-3 text-sm"
                     placeholder={placeholder}
                     onChange={(e) => updateInputValue(e.target.value)}
                 />
             ) : (
                 <textarea
                     type="text"
-                    className="pt-2  block border rounded-sm w-full p-2  h-[10rem] "
+                    className="pt-2  block border rounded-sm w-full py-2  h-[10rem] "
                     placeholder={placeholder}
                     onChange={(e) => updateInputValue(e.target.value)}
                 />

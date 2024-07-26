@@ -100,7 +100,7 @@ const AboutUs = () => {
                             <div className=" flex   items-center gap-5 mb-4">
                                 <h3 className=" text-[#47474f] text-[21px] font-semibold ">{h2}</h3>
                             </div>
-                            <ul>
+                            <ul className=" pl-0">
                                 {li.map((text) => (
                                     <li className=" text-sm mb-1 flex items-start gap-2 pr-5">
                                         <span>
