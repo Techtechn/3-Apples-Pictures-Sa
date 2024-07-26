@@ -4,9 +4,9 @@ import { Button } from "antd";
 
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
-import { LuTwitter } from "react-icons/lu";
-import { TbBrandFacebook } from "react-icons/tb";
-import { PiInstagramLogo } from "react-icons/pi";
+
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSquareYoutube } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 
@@ -35,9 +35,25 @@ const Navbar = () => {
 
                 <div className="md:flex gap-3  hidden items-center ">
                     <p>Follow Us :</p>
-                    <LuTwitter />
-                    <TbBrandFacebook />
-                    <PiInstagramLogo />
+                    <FaSquareYoutube
+                        onClick={() => {
+                            window.open(
+                                "https://www.youtube.com/@3applesguy",
+                                "_blank",
+                                "noopener,noreferrer"
+                            );
+                        }}
+                    />
+
+                    <FaSquareInstagram
+                        onClick={() => {
+                            window.open(
+                                "https://www.instagram.com/3apples_pictures_sa/?igsh=MW9wZXFjdnpjZWNxZQ%3D%3D",
+                                "_blank",
+                                "noopener,noreferrer"
+                            );
+                        }}
+                    />
                 </div>
             </div>
 

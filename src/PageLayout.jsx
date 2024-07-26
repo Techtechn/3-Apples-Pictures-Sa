@@ -3,8 +3,7 @@ import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
 
 import { FaSquareInstagram } from "react-icons/fa6";
-import { ImFacebook2 } from "react-icons/im";
-import { AiFillTwitterSquare } from "react-icons/ai";
+import { FaSquareYoutube } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 
@@ -74,24 +73,30 @@ const PageLayout = () => {
                             </p>
 
                             <div className=" flex mt-2 gap-5 text-white">
-                                <a
-                                    href=""
+                                <div
+                                    onClick={() => {
+                                        window.open(
+                                            "https://www.youtube.com/@3applesguy",
+                                            "_blank",
+                                            "noopener,noreferrer"
+                                        );
+                                    }}
                                     className="h-[35px] w-[35px]  text-white bg-[#112f67]   rounded-full  flex justify-center items-center"
                                 >
-                                    <ImFacebook2 size={12} />
-                                </a>
-                                <a
-                                    href=""
+                                    <FaSquareYoutube size={12} />
+                                </div>
+                                <div
+                                    onClick={() => {
+                                        window.open(
+                                            "https://www.instagram.com/3apples_pictures_sa/?igsh=MW9wZXFjdnpjZWNxZQ%3D%3D",
+                                            "_blank",
+                                            "noopener,noreferrer"
+                                        );
+                                    }}
                                     className="h-[35px] w-[35px]  text-white bg-[#112f67]   rounded-full flex justify-center items-center"
                                 >
                                     <FaSquareInstagram size={12} />
-                                </a>
-                                <a
-                                    href=""
-                                    className="h-[35px]  w-[35px]  text-white bg-[#112f67]   rounded-full flex justify-center items-center"
-                                >
-                                    <AiFillTwitterSquare size={12} />
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ function App() {
                         <div className=" flex  justify-center items-center">
                             <Button
                                 size="large"
-                                className=" py-6 bg-[#112f67] mt-3 w-full md:w-fit  px-12  text-[12px] font-semibold text-white"
+                                className=" py-6 bg-[#112f67] mt-3 w-full md:w-fit  px-14 ml-2  text-[12px] font-semibold text-white"
                             >
                                 SEND MESSAGE
                             </Button>
