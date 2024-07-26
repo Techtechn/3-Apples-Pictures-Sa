@@ -12,7 +12,7 @@ import logo from "./assets/logo.jpeg";
 
 const PageLayout = () => {
     return (
-        <>
+        <div className=" overflow-hidden">
             <Navbar />
             <Outlet />
 
@@ -42,7 +42,7 @@ const PageLayout = () => {
                 </div>
             </footer> */}
 
-            <footer className=" bg-[#F5F5FA]  pt-5  bg-contain  md:h-[400px]  bg-[url('https://themes.hody.co/bezel/wp-content/themes/bezel-wp/assets/images/dotted-map.png')]">
+            <footer className="  overflow-clip bg-[#F5F5FA]  pt-5  bg-contain  md:h-[400px]  bg-[url('https://themes.hody.co/bezel/wp-content/themes/bezel-wp/assets/images/dotted-map.png')]">
                 <div className="  px-8 md:px-[12%] py-8 text-[#787878] grid md:grid-cols-3 gap-8">
                     <div>
                         <img src={logo} alt="" className=" h-[50px] cursor-pointer" />
@@ -111,7 +111,7 @@ const PageLayout = () => {
             <div className=" bg-[#F5F5FA] py-8">
                 <p className=" text-center text-[#787878]">© Copyright 2024 Code Tech.</p>
             </div>
-        </>
+        </div>
     );
 };
 

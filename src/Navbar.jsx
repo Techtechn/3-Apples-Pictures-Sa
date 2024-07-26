@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { Button } from "antd";
+
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { LuTwitter } from "react-icons/lu";
@@ -18,7 +20,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className=" bg-[#112f67]  text-white flex  justify-between gap-3 py-[10px]  px-8 md:px-[12%]">
+            <div className=" bg-[#112f67]  text-white flex  w-full justify-between gap-3 py-[10px]  px-8 md:px-[12%]">
                 <div className="flex gap-1 md:gap-3 text-[12px]  md:text-base ">
                     <div className=" flex  items-center gap-2">
                         <MdOutlineLocalPhone />
@@ -56,21 +58,21 @@ const Navbar = () => {
                 </ul>
 
                 <div className=" md:hidden">
-                    <button onClick={() => setShowMenu(true)}>
+                    <Button onClick={() => setShowMenu(true)}>
                         <IoMenu size={30} />
-                    </button>
+                    </Button>
                 </div>
             </nav>
 
             <div className=" bg-gradient-to-r from-green-400 to-blue-500 h-[1.5px]"></div>
             {showMenu && (
-                <div className="  z-50 ease-in-out delay-1000 bg-[#194D47] text-white p-8 absolute inset-0 min-h-full flex justify-center items-center">
-                    <button
-                        className=" absolute top-0 right-0 p-6 cursor-pointer"
+                <div className="  z-50 ease-in-out delay-1000 bg-[#194D47] text-white  fixed right-0 left-0 top-0 bottom-0  h-full flex justify-center items-center">
+                    <Button
+                        className=" absolute top-0 right-0 p-6  bg-transparent m-4 text-white cursor-pointer"
                         onClick={() => setShowMenu(false)}
                     >
                         <IoCloseSharp size={30} />
-                    </button>
+                    </Button>
                     <ul className="">
                         <li className=" cursor-pointer py-2  ">
                             <Link

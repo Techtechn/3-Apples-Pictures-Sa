@@ -32,6 +32,12 @@ body {
 a {
     font-family: "Work Sans", sans-serif;
     color: #222;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 h3 {

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+import { Button } from "antd";
+
 function App() {
     const [value, setValue] = useState();
 
@@ -57,9 +59,12 @@ function App() {
                         </div>
 
                         <div className=" col-span-2 flex  justify-center items-center">
-                            <button className=" bg-[#112f67] mt-3 w-full md:w-fit py-4 px-12  text-[12px] font-semibold text-white">
+                            <Button
+                                size="large"
+                                className=" py-6 bg-[#112f67] mt-3 w-full md:w-fit  px-12  text-[12px] font-semibold text-white"
+                            >
                                 SEND MESSAGE
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
