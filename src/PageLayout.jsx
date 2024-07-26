@@ -12,7 +12,7 @@ import logo from "./assets/logo.jpeg";
 
 const PageLayout = () => {
     return (
-        <div className=" overflow-hidden">
+        <div>
             <Navbar />
             <Outlet />
 

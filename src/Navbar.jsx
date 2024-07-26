@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className=" bg-[#112f67]  text-white flex  w-full justify-between gap-3 py-[10px]  px-8 md:px-[12%]">
+            <div className=" bg-[#112f67]  text-white flex   justify-between gap-3 py-[10px]  px-8 md:px-[12%]">
                 <div className="flex gap-1 md:gap-3 text-[12px]  md:text-base ">
                     <div className=" flex  items-center gap-2">
                         <MdOutlineLocalPhone />

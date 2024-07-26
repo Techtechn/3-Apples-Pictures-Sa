@@ -45,12 +45,12 @@ function App() {
                     </div>
                 </div>
                 <div className=" ">
-                    <div className=" grid grid-cols-2 gap-5">
+                    <div className=" grid  gap-5">
                         <InputText placeholder="Your Name Here" />
                         <InputText placeholder="Email Address Here" />
                         <InputText placeholder="Subject Of Message" />
                         <InputText placeholder="Phone Number" />
-                        <div className=" col-span-2">
+                        <div className="">
                             <InputText
                                 labelTitle="Your Message*"
                                 placeholder="Write Your Message"
@@ -58,7 +58,7 @@ function App() {
                             />
                         </div>
 
-                        <div className=" col-span-2 flex  justify-center items-center">
+                        <div className=" flex  justify-center items-center">
                             <Button
                                 size="large"
                                 className=" py-6 bg-[#112f67] mt-3 w-full md:w-fit  px-12  text-[12px] font-semibold text-white"
@@ -75,11 +75,11 @@ function App() {
 
 function InputText({ placeholder, text }) {
     return (
-        <div className={` w-full  col-span-2 md:col-span-1 `}>
+        <div>
             {!text ? (
                 <input
                     type="text"
-                    className="  block border rounded-sm w-full p-3 text-sm"
+                    className="  block border rounded-sm w-full  p-3 text-sm"
                     placeholder={placeholder}
                     onChange={(e) => updateInputValue(e.target.value)}
                 />
