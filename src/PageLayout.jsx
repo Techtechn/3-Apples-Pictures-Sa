@@ -41,10 +41,14 @@ const PageLayout = () => {
                 </div>
             </footer> */}
 
-            <footer className="  overflow-clip bg-[#F5F5FA]  pt-5  bg-contain  md:h-[400px]  bg-[url('https://themes.hody.co/bezel/wp-content/themes/bezel-wp/assets/images/dotted-map.png')]">
+            <footer className="  overflow-clip bg-[#F5F5FA]  pt-5  relative bg-contain  md:h-[400px]  bg-[url('https://themes.hody.co/bezel/wp-content/themes/bezel-wp/assets/images/dotted-map.png')]">
                 <div className="  px-8 md:px-[12%] py-8 text-[#787878] grid md:grid-cols-3 gap-8">
                     <div>
-                        <img src={logo} alt="" className=" h-[50px] cursor-pointer" />
+                        <img
+                            src={logo}
+                            alt=""
+                            className=" h-[50px] cursor-pointer mix-blend-multiply"
+                        />
                         <h3 className=" text-[20px] font-semibold my-5 text-[#222]">
                             Tshedza Budeli{" "}
                         </h3>
@@ -105,11 +109,15 @@ const PageLayout = () => {
                         <h3 className=" text-[20px] font-semibold mb-5 text-[#222]">Links</h3>
 
                         <div className=" flex flex-col gap-2 text-[15px]">
-                            <Link to={"/home"}>Home</Link>
+                            <Link to={"/"}>Home</Link>
                             <Link to="/about-us"> About Us</Link>
                             <Link to="/contact">Contact Us</Link>
                         </div>
                     </div>
+                </div>
+
+                <div className=" w-full absolute inset-0 flex justify-end ">
+                    <img src={logo} alt="" className=" mix-blend-multiply  opacity-15" />
                 </div>
             </footer>
             <hr />
